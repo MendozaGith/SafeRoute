@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 460" width="760" height="460">
+ <defs>
+  <pattern id="dots" width="12" height="12" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="1" fill="#EA7643" opacity=".48"/></pattern>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#7395A7" flood-opacity=".2"/></filter>
+ </defs>
+ <rect width="760" height="460" fill="#EAF2F5"/>
+ <path d="M-30 375Q140 337 265 390T540 410Q620 397 790 365V470H-30Z" fill="#CDE8F4"/>
+ <path d="M588 0Q560 40 594 80T706 152Q748 165 790 170V0Z" fill="#CDEAD8"/>
+ <path d="M72 9Q100 70 152 84T236 72Q257 42 242 0Z" fill="#C9E9D4"/>
+ <path d="M436 265Q478 236 519 249T573 311Q562 350 510 362T440 338Z" fill="#CEEBDA"/>
+ <!-- bloques urbanos -->
+ <g fill="#DCE6EA" stroke="#CFDCE3" stroke-width="1.5">
+  <rect x="18" y="115" width="108" height="67" rx="7"/><rect x="147" y="113" width="76" height="67" rx="7"/>
+  <rect x="262" y="21" width="93" height="71" rx="7"/><rect x="383" y="20" width="120" height="68" rx="7"/><rect x="527" y="23" width="86" height="61" rx="7"/>
+  <rect x="23" y="220" width="103" height="65" rx="7"/><rect x="148" y="216" width="79" height="70" rx="7"/><rect x="252" y="221" width="86" height="63" rx="7"/>
+  <rect x="386" y="122" width="101" height="72" rx="7"/><rect x="521" y="129" width="77" height="71" rx="7"/><rect x="633" y="133" width="94" height="64" rx="7"/>
+  <rect x="26" y="313" width="95" height="65" rx="7"/><rect x="146" y="312" width="87" height="65" rx="7"/><rect x="265" y="315" width="107" height="65" rx="7"/>
+  <rect x="613" y="250" width="109" height="66" rx="7"/><rect x="614" y="348" width="110" height="55" rx="7"/>
+ </g>
+ <!-- carreteras blancas -->
+ <g stroke="#FFFFFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M0 98H760M0 203H760M0 298H760M0 398H760" stroke-width="20"/>
+  <path d="M137 -20V460M243 -20V460M370 -20V460M505 -20V460M609 -20V460" stroke-width="19"/>
+  <path d="M0 30 760 400M0 420 530 0" stroke-width="14"/>
+ </g>
+ <g fill="none" stroke="#CFD9DF" stroke-width="1.2" stroke-dasharray="6 8" opacity=".6">
+  <path d="M0 98H760M0 203H760M0 298H760M0 398H760"/>
+  <path d="M137 0V460M243 0V460M370 0V460M505 0V460M609 0V460"/>
+ </g>
+ <!-- zona de precaución -->
+ <path d="M259 94h136v98H259Z" fill="#F59E0B" opacity=".13"/>
+ <path d="M260 94h136v98H260Z" fill="url(#dots)"/>
+ <rect x="261" y="95" width="135" height="97" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-dasharray="6 6" rx="12"/>
+ <!-- ruta alternativa naranja -->
+ <path d="M173 154H244V203H370V295H610V352" stroke="#FEAC3A" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity=".75"/>
+ <path d="M173 154H244V203H370V295H610V352" stroke="#FFFFFF" stroke-width="2.5" fill="none" stroke-dasharray="7 8" opacity=".8"/>
+ <!-- ruta segura azul -->
+ <path d="M173 154H137V298H370V398H610V352" stroke="#FFFFFF" stroke-width="14" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+ <path d="M173 154H137V298H370V398H610V352" stroke="#2563EB" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+ <!-- puntos de inicio y fin -->
+ <circle cx="173" cy="154" r="16" fill="#FFFFFF" filter="url(#shadow)"/><circle cx="173" cy="154" r="9" fill="#2563EB" stroke="#fff" stroke-width="2"/>
+ <circle cx="610" cy="352" r="18" fill="#FFFFFF" filter="url(#shadow)"/><circle cx="610" cy="352" r="11" fill="#16A34A"/>
+ <path d="m605 352 4 4 7-8" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+ <!-- pin de alerta -->
+ <g transform="translate(337 121)" filter="url(#shadow)">
+  <path d="M0-20c-13 0-23 10-23 23 0 16 23 35 23 35S23 19 23 3C23-10 13-20 0-20Z" fill="#F59E0B" stroke="#FFFFFF" stroke-width="3"/>
+  <path d="M0-10v14m0 8v1" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+ </g>
+ <!-- labels -->
+ <g font-family="Inter,Segoe UI,sans-serif" font-size="14" fill="#516A7D" font-weight="600">
+  <text x="85" y="76">Parque Kennedy</text>
+  <text x="275" y="340">Av. José Larco</text>
+  <text x="559" y="425">Larcomar</text>
+  <text x="645" y="243" fill="#64858A">Miraflores</text>
+  <text x="28" y="440" fill="#85A3B5" font-weight="500" font-size="11">MAPA ILUSTRATIVO · NO A ESCALA</text>
+ </g>
+ <!-- etiqueta de recomendación -->
+ <g transform="translate(412 333)">
+  <rect width="118" height="34" rx="17" fill="#FFFFFF" filter="url(#shadow)"/>
+  <circle cx="19" cy="17" r="7" fill="#16A34A"/><path d="m15 17 3 3 5-6" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="32" y="22" fill="#1E3A8A" font-size="12" font-family="Inter,Segoe UI,sans-serif" font-weight="700">Menor riesgo</text>
+ </g>
+</svg>
