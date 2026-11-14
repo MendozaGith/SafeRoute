@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Safe Route</title>
+    <meta name="description" content="Pagina web enfocada en el producto SafeRoute para el curso de IHC y tecnologias moviles - Tito Gutierrez">
+    <link rel ="stylesheet" href="styles.css">
+</head>
+<body id="Inicio">
+    <header class="CHeader"> <!--La clase header contiene: logo, menu para navegar, boton CTA-->
+        <!-- LOGO -->
+        <div class=" CContainer CHeader-interno">
+            <a class= "CLogo" href="#Inicio">
+                 <img src="images/logoSF.svg" alt="logo de SafeRoute" width="48" heigth="48">
+            </a>
+            <!-- MENU -->
+            <nav class="CNav">
+                <a class="CEnlace-nav" href="#Inicio">Inicio</a>
+                <a class="CEnlace-nav" href="#">Como funciona</a>
+                <a class="CEnlace-nav" href="#">Caracteristicas</a>
+                <a class="CEnlace-nav" href="#">Sobre nosotros</a>
+            </nav>
+            <!-- BOTON Iniciar sesion -->
+             <a class="btn" href="#">
+                <img class="CIcono" src="images/login.svg" alt="" width="20" height="20">
+                <span>Iniciar Sesion</span>
+             </a>
+        </div>
+    </header>
+
+    <main id="contenido"> <!-- El contenido principal es: hero, secciones 1,2,3 y 4-->
+        <section class="CHero">
+            <div class="CContainer CHero-interno">
+                <!-- PARTE IZQUIERDA DEL HERO, PURO TEXTO -->
+                <div class="CHerotext">
+                    <p class="subtitulo">
+                        <span>"Moverte con confianza empieza aquí</span>
+                    </p>
+                    <h1 id="hero-titulo">"Planifica tu ruta"<span>más segura</span>
+                    </h1>
+                    <p class="hero-descripcion">
+                        "Explora alternativas para llegar a tu destino, identifica zonas de riesgo y toma decisiones con mayor información en Lima Metropolitana."
+                    </p>
+                    <div class="hero-botones">
+                        <a class="btn btn-rutaS" href="#como-funciona">
+                            <img class="CIcono" src="images/shield.svg" alt="" width="20" height="20">
+                            <span>Ruta segura</span>
+                        </a>
+
+                        <a class="btn btn-rutaR" href="#como-funciona">
+                            <img class="CIcono" src="images/zap.svg" alt="" width="20" height="20">
+                            <span>Ruta Rapida</span></a>
+                    </div>
+                    <a class="hero-map" href="#caracteristicas">
+                        <img class="CIcono" src="images/map.svg" alt="" width="20" height="20">
+                        <span>Explorar el mapa</span>
+                    </a>
+                </div>
+                <!-- PARTE DERECHA DEL HERO, LA IMAGEN -->
+                 <div class="CHeroimg">
+                    <div class="mapa">
+                        <img src="images/hero-map.svg" alt="Mapa ilustrativo">
+                    </div>
+
+                 </div>
+
+            </div>
+
+        </section>
+
+        <!--SECCIÓN 1: COMO FUNCIONA -->
+        <section class="CSeccion" id="como-funciona">
+            <div class="CContainer">
+                <div class="seccion-texto">
+                    <p>FÁCIL DE UTILIZAR</p>
+                    <h2 id="pasos">¿Como funciona?</h2>
+                    <p>De tu punto de partida al destino, en cuatro pasoss sencillos</p>
+                </div>
+                <div class="seccion-pasos">
+                    <article class="pasos-cartilla">
+                        <img src="images/map-ping.svg" alt="" width="32" height="32">
+                        <span class="CNumero-paso">01</span>
+                        <h3>Ingresa tu destino</h3>
+                        <p>Indica a donde quieres ir y desde que punto iniciaras el recorrido</p>
+                    </article>
+                    <article class="pasos-cartilla">
+                        <img src="images/sliders.svg" alt="" width="32" height="32">
+                        <span class="CNumero-paso">02</span>
+                        <h3>Define tu prioridad</h3>
+                        <p>Elige la seguridad, el tiempo o la distancia como criterio principal.</p>
+                    </article>
+                    <article class="pasos-cartilla">
+                        <img src="images/route.svg" alt="" width="32" height="32">
+                        <span class="CNumero-paso">03</span>
+                        <h3>Compara las rutas</h3>
+                        <p>Revisa alternativas e identifica iluminación, incidentes y puntos de apoyo</p>
+                    </article>
+                    <article class="pasos-cartilla">
+                        <img src="images/footprints.svg" alt="" width="32" height="32">
+                        <span class="CNumero-paso">04</span>
+                        <h3>Inicia tu recorrido</h3>
+                        <p>Sigue la ruta elegida y consulta los avisos relacionados con el trayecto.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- SECCIÓN 2: CARACTERISTICAS -->
+         <section class="CSeccion" id="caracteristicas">
+            <div class="CContainer">
+                <div class="seccion-texto"> 
+                    <p>Herramietnas para desplazarte con mas contexto y menos incertidumbre</p>
+                </div>
+                <div class="seccion-caracteristicas">
+                    <article class="carac-cartila">
+                        <img class="CIcono" src="images/shield.svg" alt="" width="48" height="48">
+                        <h3>Rutas seguras</h3>
+                        <p>Compara trayectos considerando zonas de riesgo, iluminación y lugares de apoyo.</p>
+                        <span class="carac-objetivo">Planificacion de rutas</span>
+                    </article>
+                    <article class="carac-cartila">
+                        <img class="CIcono" src="images/clock.svg" alt="" width="48" height="48">
+                        <h3>Información oportuna</h3>
+                        <p>Consulta información contextual de tu recorrido. La demo utiliza datos simulados.</p>
+                        <span class="carac-objetivo">Contexto de la zona</span>
+                    </article>
+                    <article class="carac-cartila">
+                        <img class="CIcono" src="images/bell.svg" alt="" width="48" height="48">
+                        <h3>Alertas locales</h3>
+                        <p>Visualiza avisos de ejemplo sobre incidentes y cambios relevantes cerca de tu ruta</p>
+                        <span class="carac-objetivo">Prevención y orientación</span>
+                    </article>
+                    <article class="carac-cartila">
+                        <img class="CIcono" src="images/users.svg" alt="" width="48" height="48">
+                        <h3>Comunidad</h3>
+                        <p>Conoce cómo los reportes ciudadanos pueden aportar información para otros usuarios.</p>
+                        <span class="carac-objetivo">Reportes colaborativos</span>
+                    </article>
+                </div>
+            </div>
+         </section>
+    </main>
+    <!-- Footer -->
+     <footer class="CFooter" id="nosotros">
+        <div class="CContainer footer-interno">
+            <div class="footer-nosotros">
+                <a href="Inicio">
+                    <img src="images/logoSF.svg">
+                    <Span>SafeRoute</Span>
+                </a>
+                <p>Tu seguridad, nuestro objetivo</p>
+                <p>Una propuedas de CivisTech para Lima Metropolitana</p> 
+            </div>
+        
+
+
+            <div class="footer-columna">
+                <h2>Producto</h2>
+                <a href="#">Como funciona</a>
+                <a href="#">Caracteristicas</a>
+                <a href="#">Rutas y Alertas</a>
+            </div>
+
+            <div class="footer-columna">
+                <h2>Producto</h2>
+                <a href="#">Sobre CivisTech</a>
+                <a href="#">Volver al inicio</a>
+                <a href="#">Acceder a la aplicacion</a>
+            </div>
+            
+
+        </div>
+     </footer>
+    
+
+    
+</body>
+</html>
