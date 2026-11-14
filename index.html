@@ -22,10 +22,22 @@
                 <a class="CEnlace-nav" href="#">Sobre nosotros</a>
             </nav>
             <!-- BOTON Iniciar sesion -->
-             <a class="btn" href="#">
+             <a class="btn CLogin" href="#">
                 <img class="CIcono" src="images/login.svg" alt="" width="20" height="20">
                 <span>Iniciar Sesion</span>
              </a>
+
+             <!-- RESPONSIVE DESDE HTML -->
+              <details class="CMenu-movil">
+                <summary class="CMenu-boton">Menu</summary>
+                <nav class="CNav">
+                    <a  href="#Inicio">Inicio</a>
+                    <a  href="#">Como funciona</a>
+                    <a  href="#">Caracteristicas</a>
+                    <a  href="#">Sobre nosotros</a>
+                    <a href="#">Iniciar sesión</a>
+                </nav>
+              </details>
         </div>
     </header>
 
@@ -37,7 +49,7 @@
                     <p class="subtitulo">
                         <span>"Moverte con confianza empieza aquí</span>
                     </p>
-                    <h1 id="hero-titulo">"Planifica tu ruta"<span>más segura</span>
+                    <h1 id="hero-titulo">Planifica tu ruta <span>más segura</span>
                     </h1>
                     <p class="hero-descripcion">
                         "Explora alternativas para llegar a tu destino, identifica zonas de riesgo y toma decisiones con mayor información en Lima Metropolitana."
@@ -79,7 +91,7 @@
                 </div>
                 <div class="seccion-pasos">
                     <article class="pasos-cartilla">
-                        <img src="images/map-ping.svg" alt="" width="32" height="32">
+                        <img src="images/map-pin.svg" alt="" width="32" height="32">
                         <span class="CNumero-paso">01</span>
                         <h3>Ingresa tu destino</h3>
                         <p>Indica a donde quieres ir y desde que punto iniciaras el recorrido</p>
@@ -109,6 +121,7 @@
          <section class="CSeccion" id="caracteristicas">
             <div class="CContainer">
                 <div class="seccion-texto"> 
+                    <H2>Caracteristicas</H2>
                     <p>Herramietnas para desplazarte con mas contexto y menos incertidumbre</p>
                 </div>
                 <div class="seccion-caracteristicas">
@@ -142,7 +155,8 @@
     </main>
     <!-- Footer -->
      <footer class="CFooter" id="nosotros">
-        <div class="CContainer footer-interno">
+        <div class="CContainer CFooter-interno">
+
             <div class="footer-nosotros">
                 <a href="Inicio">
                     <img src="images/logoSF.svg">
@@ -154,15 +168,15 @@
         
 
 
-            <div class="footer-columna">
+            <div class="CFooter-columna">
                 <h2>Producto</h2>
                 <a href="#">Como funciona</a>
                 <a href="#">Caracteristicas</a>
                 <a href="#">Rutas y Alertas</a>
             </div>
 
-            <div class="footer-columna">
-                <h2>Producto</h2>
+            <div class="CFooter-columna">
+                <h2>Información</h2>
                 <a href="#">Sobre CivisTech</a>
                 <a href="#">Volver al inicio</a>
                 <a href="#">Acceder a la aplicacion</a>

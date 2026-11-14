@@ -1,0 +1,483 @@
+/*GENERALES */
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #374151; background-color: #FFFFFF;
+}
+
+.CContainer{
+    width: 90%; max-width: 1200px; 
+    margin: 0 auto; 
+    /* MARGEN: TOP, RIGTH, BOTTOM, LEFT */
+}
+
+.CIcono{
+    width: 20px; height: 20px;
+}
+
+/* HEADER */ 
+.CHeader{
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #E5E7EB;
+}
+
+/* HEADER INTERNO */
+.CHeader-interno{
+    min-height: 80px;
+    display:flex; align-items:center;
+    justify-content:space-between;
+
+    gap:24px;
+}
+/* LOGO DE SAFERUTE HEADER*/
+.CLogo{
+    display: flex; align-items: center;
+}
+
+.CLogo img{
+    width: 48px; height: 48px;
+}
+
+/* NAV */
+.CNav{
+    display:flex; align-items: center; gap:24px;
+}
+
+.CEnlace-nav{
+    color: #1E3A8A; 
+    text-decoration: none; 
+    font-size:15px; font-weight: 500;
+}
+/* "CLICKEABLE" */
+.CEnlace-nav:hover{
+    color: #2563EB;
+}
+
+/* BOTON INICIAR SESION */
+.CLogin{
+    display:inline-flex; align-items: center;
+    justify-content: center;
+    gap:8px;
+    padding: 12px 20px;
+
+    background-color: #2563EB; color: #FFFFFF;
+
+    text-decoration: none; border-radius: 8px; font-weight: 600; 
+}
+
+/* EL RESPONSIVE MOVIL */
+.CMenu-movil{
+    display: none;
+
+}
+
+/* HERO */
+.CHero {
+    background-color: #EAF8FF;
+    padding: 64px 0;
+}
+
+.CHero-interno {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 48px;
+}
+
+/* COLUMNA DE TEXTO */
+
+.CHerotext {
+    min-width: 0;
+}
+
+.CHerotext .subtitulo {
+    color: #2563EB;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+#hero-titulo {
+    color: #1E3A8A;
+    font-size: 42px;
+    line-height: 1.2;
+    margin: 0 0 24px;
+}
+
+#hero-titulo span {
+    color: #2563EB;
+}
+
+.hero-descripcion {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 32px;
+}
+
+/* BOTONES DEL HERO */
+
+.hero-botones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.btn-rutaS,
+.btn-rutaR,
+.hero-map {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.btn-rutaS {
+    background-color: #2563EB;
+    color: white;
+}
+
+.btn-rutaR,
+.hero-map {
+    background-color: white;
+    color: #2563EB;
+    border: 1px solid #2563EB;
+}
+
+.hero-map {
+    width: fit-content;
+}
+
+/* MAPA DEL HERO */
+
+.CHeroimg {
+    min-width: 0;
+}
+
+.mapa {
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 12px 32px rgba(30, 58, 138, 0.12);
+}
+
+.mapa img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* SECCIÓN 1: COMO FUNCIONA */
+/* ESTILO GENERAL DE LAS SECCIONES */
+
+.CSeccion {
+    padding: 72px 0;
+}
+
+/* ENCABEZADO DE LAS SECCIONES */
+
+.seccion-texto {
+    margin-bottom: 32px;
+}
+
+.seccion-texto h2 {
+    color: #1E3A8A;
+    font-size: 32px;
+    margin: 8px 0 16px;
+}
+
+.seccion-texto p {
+    line-height: 1.6;
+}
+
+/* DISTRIBUCION DE LOS PASOS */
+
+.seccion-pasos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+/* TARJETAS */
+
+.pasos-cartilla {
+    background-color: #F3F4F6;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    padding: 24px;
+}
+
+.pasos-cartilla .CIcono {
+    width: 32px;
+    height: 32px;
+}
+
+.CNumero-paso {
+    display: block;
+    color: #2563EB;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 12px 0;
+}
+
+.pasos-cartilla h3 {
+    color: #1E3A8A;
+    font-size: 18px;
+    margin: 0 0 12px;
+}
+
+.pasos-cartilla p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* SECCION 2: CARACTERISTICAS */
+
+#caracteristicas {
+    background-color: #F3F4F6;
+}
+
+.seccion-caracteristicas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.carac-cartila {
+    background-color: #FFFFFF;
+    padding: 24px;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+}
+
+.carac-cartila .CIcono {
+    width: 36px;
+    height: 36px;
+}
+
+.carac-cartila h3 {
+    color: #1E3A8A;
+    font-size: 18px;
+    margin: 16px 0 12px;
+}
+
+.carac-cartila p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.carac-objetivo {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 8px 12px;
+
+    border-radius: 20px;
+    background-color: #DBEAFE;
+    color: #1E3A8A;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* FOOTER */
+.CFooter {
+    background-color: #1E3A8A;
+    color: #FFFFFF;
+    padding: 48px 0;
+}
+
+.CFooter-interno {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 48px;
+}
+
+.CFooter-nosotros a {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.CFooter-nosotros img {
+    width: 40px;
+    height: 40px;
+}
+
+.CFooter-nosotros p {
+    color: #DBEAFE;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.CFooter-columna {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.CFooter-columna h2 {
+    color: #FFFFFF;
+    font-size: 16px;
+    margin: 0 0 8px;
+}
+
+.CFooter-columna a {
+    color: #DBEAFE;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.CFooter-columna a:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+/* ===== 7. RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+
+    /* HEADER */
+    .CFooter-interno{
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+    .CHeader-interno {
+        min-height: 70px;
+        gap: 12px;
+    }
+
+    /* OCULTAR MENU DE ESCRITORIO */
+
+    .CNav {
+        display: none;
+    }
+
+    /* OCULTAR BOTON DE INICIAR SESION */
+
+    .CLogin {
+        display: none;
+    }
+
+    /* MOSTRAR MENU MOVIL */
+
+    .CMenu-movil {
+        display: block;
+        position: relative;
+    }
+
+    /* BOTON DESPLEGABLE */
+
+    .CMenu-boton {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        padding: 10px;
+        cursor: pointer;
+
+        color: #1E3A8A;
+        font-weight: 600;
+    }
+
+    /* ENLACES DESPLEGABLES */
+
+    .CMenu-enlaces {
+        position: absolute;
+        top: 100%;
+        right: 0;
+
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        min-width: 220px;
+        padding: 20px;
+
+        background-color: #FFFFFF;
+        border: 1px solid #E5E7EB;
+        border-radius: 8px;
+
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+        z-index: 100;
+    }
+
+    .CMenu-enlaces a {
+        color: #1E3A8A;
+        text-decoration: none;
+    }
+
+        .CHero {
+        padding: 40px 0;
+    }
+
+    .CHero-interno {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    #hero-titulo {
+        font-size: 32px;
+    }
+
+    .hero-botones {
+        flex-direction: column;
+    }
+
+    .btn-rutaS,
+    .btn-rutaR,
+    .hero-map {
+        width: 100%;
+    }
+
+    /* SECCIONES */
+
+    .CSeccion {
+        padding: 48px 0;
+    }
+
+    .seccion-pasos,
+    .seccion-caracteristicas {
+        grid-template-columns: 1fr;
+    }
+
+    .seccion-texto h2 {
+        font-size: 26px;
+    }
+
+    /* FOOTER */
+
+    .CFooter-interno {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    /* TABLET 1024 */
+    @media (max-width: 1024px) {
+
+    .CHero-interno {
+        gap: 24px;
+    }
+
+    .seccion-pasos,
+    .seccion-caracteristicas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .CFooter-interno {
+        gap: 24px;
+    }
+}
